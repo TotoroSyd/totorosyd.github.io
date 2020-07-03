@@ -9,18 +9,33 @@ body {
     padding: 1rem 2rem 3rem 2rem;
 }
 
-h1 {
-    text-align: center;
-    padding: 20px
+.waves h1,
+.waves h2 {
+    align-self: center;
+    background-color: transparent;
+    color: #383e56a8
 }
 
 .waves {
-  width: 100px;
+  width: 100vw;
   height: 400px;
-  background-image: url(./waves.jpg);
+  background-image: url(image/batmanduck.jpg);
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
 }
 
+main {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #383e56a8
+}
 /* Style the tab buttons */
 .tablink {
     background-color: #555;

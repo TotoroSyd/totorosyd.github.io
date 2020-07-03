@@ -10,11 +10,12 @@
 </head>
 
 <body>
-    <main>
+    
     <!--Togglable Tab Headers-->
     <div id="home" class="tabcontent">
         <h1>Home</h1>
         <p>Welcome to Phoebe's page</p>
+
     </div>
 
     <div id="about" class="tabcontent">
@@ -43,9 +44,8 @@
     <button class="tablink" onclick="openTab('books', this, 'orange')">Books</button>
     <button class="tablink" onclick="openTab('sites', this, 'purple')">Sites</button>
 
-    <h2 style="padding-top: 5rem;">About me</h2>
-    <p> I am a Web Developer living in Sydney</p>
     
+    <main>
     <h2>Interests</h2>
     <ul>
         <li>Surfing</li>
@@ -59,13 +59,13 @@
             <img height="300" src="https://m.media-amazon.com/images/I/51AO0fWIeeL.jpg">   
         </a>
 
-        <a href="https://www.amazon.com.au/7SEEDS-34-%E3%83%95%E3%83%A9%E3%83%AF%E3%83%BCC%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1/dp/409139308X/ref=sr_1_1?dchild=1&keywords=7seeds&qid=1593152567&s=audible&sr=8-1">
-            <img height="300" src="https://images-na.ssl-images-amazon.com/images/I/519ySWtsyPL._SX319_BO1,204,203,200_.jpg">   
+        <a href="https://www.amazon.com.au/dp/B07J1LQDWD?plink=4b1c6a28-71e7-4e&ref=adblp13nvvxx_0_0_im">
+            <img height="300" src="https://m.media-amazon.com/images/I/51eR2+XHi2L.jpg">   
         </a>
     
     <h2>Favorite TV shows</h2>
-        <a href="https://www.imdb.com/title/tt2661044/?ref_=fn_al_tt_1">
-            <img height="300" src="https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_SY1000_CR0,0,810,1000_AL_.jpg">   
+        <a href="https://www.imdb.com/title/tt5753856/?ref_=hm_fanfav_tt_1_pd_fp1">
+            <img height="300" src="https://m.media-amazon.com/images/M/MV5BZmY2YzU4NDktODIxYi00YWIyLWIzYTctODBkYzYzZjc0ODdlXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_SY1000_CR0,0,675,1000_AL_.jpg">   
         </a>
     
     <h2>Favorite Sites</h2>
@@ -76,12 +76,13 @@
  
     </main>
 
+
     <section class="waves">
-        width:100px;
-        height: 400px;
-        background-imah: urk(./hero.jpg);
+        <h1>About me</h1>
+        <h2> I am a Web Developer living in Sydney</h2>
     </section>
-    
+
+    <!--Footer-->
     <footer style="text-align: center">
         Created with &hearts; in Sydney by <a href="mailto:phoebe.ngsyd@gmail.com">Phoebe Nguyen</a>
     </footer>
@@ -99,7 +100,7 @@
 
 
 
-    
+    <!--Function for button on header-->
     <script>
         function openTab(tabName, elmnt, color) {
             // Hide all elements with class="tabcontent" by default */
