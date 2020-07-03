@@ -18,7 +18,7 @@ body {
 
 .waves {
   width: 100vw;
-  height: 400px;
+  height: 500px;
   background-image: url(image/batmanduck.jpg);
   background-size: cover;
 
@@ -65,8 +65,8 @@ footer {
   
   /* Style each tab content individually */
   #home {background-color: #f3c623;}
-  #about {background-color:green;}
   #interests {background-color:#01a9b4;}
+  #shows {background-color: green;}
   #books {background-color:orange;}
   #sites {background-color:purple;}
 
