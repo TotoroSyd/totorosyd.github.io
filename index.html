@@ -3,17 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phoebe's website</title>
+    <title>Phoebe Nguyen</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" Type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Phoebe Nguyen</h1>
+    <!--Togglable Tab Headers-->
+    <div id="home" class="tabcontent">
+        <h1>Home</h1>
+        <p>Welcome to Phoebe's page</p>
+    </div>
 
-    <h2>About me</h2>
-    <p> I am a Junior Web Developer living in Sydney</p>
+    <div id="about" class="tabcontent">
+        <h1>About</h1>
+        <p>"Are you asking about me?"</p>
+      </div>
+      
+      <div id="interests" class="tabcontent">
+        <h1>Interests</h1>
+        <p>What I enjoy when I don't code</p>
+      </div>
+
+      <div id="books" class="tabcontent">
+        <h1>Books</h1>
+        <p>You will find all the books I have read and those I am reading</p>
+      </div>
+      
+      <div id="sites" class="tabcontent">
+        <h1>Sites</h1>
+        <p>Let's visit some sites that I find interesting</p>
+      </div>
+      
+      <button class="tablink" onclick="openTab('home', this, '#f3c623')" id="defaultOpen">Home</button>
+      <button class="tablink" onclick="openTab('about', this, 'green')">About</button>
+      <button class="tablink" onclick="openTab('interests', this, '#01a9b4')">Interests</button>
+      <button class="tablink" onclick="openTab('books', this, 'orange')">Books</button>
+      <button class="tablink" onclick="openTab('sites', this, 'purple')">Sites</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 style="padding-top: 5rem;">About me</h2>
+    <p> I am a Web Developer living in Sydney</p>
     
     <h2>Interests</h2>
     <ul>
@@ -42,9 +87,35 @@
             <li><a href="amazon.com">Amazon</a></li>
             <li><a href="https://www.designspiration.com/">Designspiration</a></li>
         </ul>
-
+ 
     <footer style="text-align: center">
         Created with &hearts; in Sydney by <a href="mailto:phoebe.ngsyd@gmail.com">Phoebe Nguyen</a>
     </footer>
+
+    <script>
+        function openTab(tabName, elmnt, color) {
+            // Hide all elements with class="tabcontent" by default */
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the background color of all tablinks/buttons
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+
+            // Show the specific tab content
+            document.getElementById(tabName).style.display = "block";
+
+            // Add the specific color to the button used to open the tab content
+            elmnt.style.backgroundColor = color;
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
