@@ -1,18 +1,49 @@
 html, body {
     font-family: 'Open Sans', roboto, arial, sans-serif;
-    background: linear-gradient(180deg, rgba(255, 165, 176, 0.8) 0%, #6A197D 100%), #6A197D;;
     backdrop-filter: blur(4px);
-    color: #F5F5F5;
-    height: 100%;
+    color: #383e56;
     font-size: 16px;
 }
 
 body {
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 3rem 2rem;
 }
 
 h1 {
-    background-color:purple;
     text-align: center;
     padding: 20px
 }
+
+/* Style the tab buttons */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover, .tablink:focus {
+    background-color: #777;
+    outline: none;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* Style each tab content individually */
+  #home {background-color: #f3c623;}
+  #about {background-color:green;}
+  #interests {background-color:#01a9b4;}
+  #books {background-color:orange;}
+  #sites {background-color:purple;}
