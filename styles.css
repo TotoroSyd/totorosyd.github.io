@@ -14,6 +14,13 @@ h1 {
     padding: 20px
 }
 
+.waves {
+  width: 100px;
+  height: 400px;
+  background-image: url(./waves.jpg);
+  background-size: cover;
+}
+
 /* Style the tab buttons */
 .tablink {
     background-color: #555;
@@ -47,3 +54,5 @@ h1 {
   #interests {background-color:#01a9b4;}
   #books {background-color:orange;}
   #sites {background-color:purple;}
+
+  
